@@ -1,0 +1,9 @@
+{
+  "usertext": "[user]",
+  "welcomeMessage": "สวัสดีค่ะ [user] ดันโจ ยินดีต้อนรับสู่โลกดินแดนดอกไม้ของพวกเรา",
+  "goodbyeMessage": "โชคดีนะ, [user]",
+  "welcomeChannelId": "347976652615319552",
+
+  "command": "hana"
+}
+
