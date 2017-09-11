@@ -260,26 +260,6 @@ client.on("message", message => {
     } // Completed
 }); // Completed
 
-if (message.content.startsWith ("!n")) {
-        let modRole = message.guild.roles.find("name", "Moderators");
-        if(message.member.roles.has(modRole.id)) {
-            var announce = message.content.split(' ');
-            announce.shift();
-            announce = announce.join(' ');
-            console.log(announce); // what is
-            //var embed = new Discord.RichEmbed(announce)
-            //.setColor(0x00AE86)
-            //.setTimestamp()
-            //.addField(`New Announcement by ${message.author.username}`, `${announce}`);
-            //.addField(`${announce}`);
-            //client.channels.find("name", "admin").sendEmbed(embed);
-            client.channels.find("name", "news").sendMessage(`${announce}`);
-            //message.channel.sendMessage(`:ok_hand: Annoucement sent to #general`);
-        }
-        else {
-            message.channel.sendMessage("**Error:** \n You dont have permission 'Endless Potential' to announce");
-            
-        }
 
 
 // Log our bot in
